@@ -16,7 +16,7 @@ if (!fs.existsSync(FILE_PATH)) {
   fs.writeFileSync(FILE_PATH, JSON.stringify([]));
 }
 
-// Utility: Load todos
+// Utility: Load todo
 function loadTodos() {
   try {
     return JSON.parse(fs.readFileSync(FILE_PATH, "utf8"));
